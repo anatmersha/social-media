@@ -28,10 +28,6 @@
     "eslint-plugin-import": "^2.22.0"
   },
   "optionalDependencies": { 
-    "fsevents": "*" 
-  },
-  "engines": {
-    "node": "14.x",
-    "npm": "6.x"
-}
+    "fsevents": "2.1.2" 
+  }
 }
