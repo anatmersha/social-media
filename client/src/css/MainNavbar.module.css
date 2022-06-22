@@ -1,0 +1,165 @@
+.listLink{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.logOutBtn{
+    padding: 10px;
+    color: white;
+    margin-left: 61vw;
+    font-weight: 600;
+}
+.navProfileImg{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+}
+.navList{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    background-color: rgb(147, 114, 114);
+    position: relative;
+}
+.navListHeadline{
+    padding: 10px;
+    margin-left: -35px;
+    font-size: 22px;
+    color: white;
+    font-weight: 800;
+}
+.listItem{
+    padding: 10px;
+}
+.logout{
+    position: absolute;
+    right: 3vw;
+    top: 8vh;
+    display: grid;
+    font-size: 22px;
+}
+.yesLogoutBtn, .noLogoutBtn{
+    border: none;
+    height: 3vh;
+    margin-top: 1vh;
+}
+.searchIcon{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 20px;
+} 
+.searchInput{
+    width: 15vw;
+    height: 2.4vh;
+}
+.searchBox{
+    position: absolute;
+        top: 2.3vh;
+}
+.result{
+    width: 15.3vw;
+    height: 45vh;
+    box-shadow: rgb(2 2 2) 0px 1px 4px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF8F8;
+    position: fixed;
+    z-index: 99;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.searchResultList{
+    width: 100%;
+    height: 7vh;
+    text-align: left;
+    position: relative;
+}
+.searchUserImg{
+    position: absolute;
+    border-radius: 50px;
+    width: 2vw;
+    height: 5vh;
+    left: 0.5vw;
+    top: 1.5vh;
+}
+.searchUserName{
+    position: absolute;
+    top: 14px;
+    left: 62px;
+}
+.searchUserAdress{
+    position: absolute;
+    top: 4vh;
+    left: 62px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1025px) {
+    .logOutBtn{
+        margin-left: 32vw;
+        font-size: 15px;
+    }
+    .listItem{
+        font-size: 15px;
+    }
+    .navListHeadline{
+        font-size: 19px;
+        margin-top: -7px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logOutBtn{
+        margin-left: 30vw;
+        font-size: 11px;
+    }
+    .listItem{
+        font-size: 11px;
+    }
+    .navProfileImg{
+        width: 36px;
+        height: 36px;
+    }
+    .navListHeadline{
+        font-size: 15px;
+        margin-top: -4px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logOutBtn{
+        margin-left: -20vw;
+    }
+    .navListHeadline{
+        font-size: 10px;
+    }
+    .listItem{
+        padding: 5px;
+        font-size: 8px;
+    }
+    .navProfileImg{
+        width: 20px;
+        height: 20px;
+    }
+    .logOutBtn{
+        margin-left: 12vw;
+        font-size: 8px;
+    }
+    .logout{
+        font-size: 7px;
+        right: 11vw;
+        top: 5vh;
+    }
+    .yesLogoutBtn, .noLogoutBtn{
+        height: 1.5vh;
+        font-size: 8px;
+        margin-bottom: 0.3vh;
+    }
+}

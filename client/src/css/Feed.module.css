@@ -1,0 +1,665 @@
+.postsUpload{
+    background-color: white;
+    width: 90%;
+    margin-left: 2vw;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(251 246 246);
+}
+.navItem{
+    display: flex;
+}
+.topLink{
+    padding: 5px;
+    margin: 5px;
+    transition: filter 300ms;
+    color: black;
+    text-decoration-line: none;
+    font-size: 26px;
+}
+.topLink:hover{
+    filter:brightness(1.2);
+}
+.navbarNav{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+}
+.dropIcon{
+    font-size: 24px;
+    margin-top: 4px;
+    margin-left: 8px;
+
+}
+.dropHr{
+    margin: 0;
+    width: 123px;
+    margin-left: -5px;
+}
+.dropItem{
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 8px;
+}
+.optionsBtn{
+    padding: 5px;
+    margin: 5px;
+    transition: filter 300ms;
+    color: black;
+    text-decoration-line: none;
+    font-size: 26px;
+}
+.dropMenu{
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 70px;
+    height: 110px;
+    width: 115px;
+    font-size: 25px;
+}
+.mainHeader{
+    float: left;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.secondFrame{
+    width: 53%;
+    height: 100vh;
+    background-color: #937272;
+    border-radius: 85px 85px 0px 0px;
+}
+.mainHeader{
+    float: left;
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 4px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.mainFrame{
+    background-color: #FFF8F8;
+    width: 40%;
+    margin-left: 30vw;
+}
+.alertsBell, .chatIcon{
+    float: right;
+    font-size: 22px;
+    color: white;
+    padding-left: 8px;
+    padding-right: 17px;
+    margin-top: 12px;
+}
+.popUp{
+    position: fixed;
+    top: 0;
+    background-color: #fcf6f6;
+    width: 62vw;
+    height: 100vh;
+    left: 365px;
+}
+.popUpInner{
+    background-color: #eeb0b0;
+    height: 70vh;
+    margin-top: 100px;
+}
+.thirdFrameTxt{
+    width: 100%;
+    position: relative;
+    line-height: 0;
+    font-size: 13px;
+    margin-left: -120px;
+}
+.sideNavbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 23%;
+}
+.thirdFrame{
+    width: 65%;
+    position: relative;
+    line-height: 0;
+    font-size: 13px;
+    margin-left: 5.5vw;
+}
+.imgFrame{
+    width: 100%;
+    height: 60vh;
+}
+.linksFrame{
+    width: 100%;
+}
+.leftLinks{
+    font-size: 24px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+.rightLinks{
+    margin-left: 12.5vw;
+    font-size: 24px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+.imgPost{
+    height: 100%;
+    width: 65%;
+}
+.vidPost{
+    height: 100%;
+    width: 65%;
+}
+.profileImg{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+    margin-left: -18.5vw;
+    margin-top: 1vh;
+}
+.postComments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+}
+.commentCard{
+    background-color: white;
+    position: relative;
+    height: max-content;
+    width: 65%;
+    margin-bottom: 2vh;
+    margin-left: 5.5vw;
+}
+.userImg{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 20px;
+}
+.userName{
+    width: 50%;
+    text-align: left;
+    margin-left: 55px;
+    margin-top: 0.5vh;
+}
+.userComment{
+    float: left;
+    margin-top: 3vh;
+    margin-left: 0.3vw;
+}
+.updateTime{
+    float: left;
+    font-size: 8px;
+    margin-left: -1.6vw;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.updateInput{
+    width: 70%;
+    height: 2.2vh;
+    float: left;    
+    border: none;
+}
+.updateBtn{
+    float: left;
+    height: 3vh;
+    background: transparent;
+    border: none;
+}
+.txtFrame{
+    position: relative;
+    width: 65%;
+    height: 18vh;
+    max-height: fit-content;
+    max-height: fit-content;
+    background-color: #EABEBE;
+    border-radius: 10px;
+    margin-left: 5.5vw;
+}
+.txtPost{
+    float: left;
+    margin-left: 20px;
+}
+.profileImgTxt{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+    position: absolute;
+    left: 3vw;
+    top: 1vh;
+}
+.linksFrameTxt{
+    width: 98%;
+    margin-top: -3vh;
+    margin-left: 0.5vw;
+}
+.leftLinksTxt{
+    font-size: 24px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+.rightLinksTxt{
+    font-size: 24px;
+    padding: 10px;
+    margin-left: 347px;
+    background: transparent;
+    border: none;
+}
+.textPostFrame{
+    width: 80%;
+    margin-left: 4vw;
+    position: relative;
+}
+.imgPostFrame{
+    width: 80%;
+    margin-left: 4vw;
+    margin-top: 90px;
+}
+.postTxtComments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+}
+.commentCardTxt{
+    background-color: white;
+    position: relative;
+    height: max-content;
+    width: 83%;
+    margin-bottom: 2vh;
+    margin-left: 3vw;
+}
+.userImgTxt{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 20px;
+}
+.userNameTxt{
+    width: 50%;
+    text-align: left;
+    margin-left: 55px;
+    margin-top: 5px;
+}
+.userCommentTxt{
+    float: left;
+    margin-left: 8px;
+    margin-top: 18px;
+}
+.updateTimeTxt{
+    float: left;
+    font-size: 8px;
+    margin-left: -35px;
+    margin-top: 24px;
+}
+.updateInputTxt{
+    background-color: rgb(248, 233, 233);
+    width: 70%;
+    height: 2.5vh;
+    border-radius: 10px;
+    float: left;
+}
+.updateBtnTxt{
+    float: left;
+    height: 3vh;
+    border-radius: 10px;
+    background: transparent;
+}
+.postTxtBtn{
+    background-color: #D9BDBD;
+    width: 26vw;
+    height: 4vh;
+    margin-left: 0.5vw;
+    border: none;
+}
+.postBtn{
+    width: 20.5vw;
+    height: 4vh;
+    margin-left: -0.2vw;
+    border: none;
+    background-color: #D9BDBD;
+}
+.txtUserName{
+    margin-top: 5vh;
+    margin-left: 6vw;
+    padding-top: 1vh;
+    width: 30%;
+    text-align: left;
+}
+.txtUserAdress{
+    margin-left: 130px;
+    margin-bottom: -45px;
+    margin-top: 20px;
+    width: 30%;
+    text-align: left;
+}
+.txtPostLikes{
+    width: 30%;
+    text-align: left;
+    margin-left: 70px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.txtCommentEdit{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.txtCommentDelete{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin-right: 40px;
+}
+.addTxtCreated{
+    text-align: left;
+    font-size: 8px;
+    width: 50%;
+    margin-left: 70px;
+}
+.imgUserName{
+    margin-left: 3vw;
+    margin-top: -3.5vh;
+    padding-bottom: 0.7vh;
+    width: 85%;
+    text-align: left;
+}
+.imgUserAdress{
+    margin-left: 3vw;
+    width: 85%;
+    text-align: left;
+}
+.imgPostLikes{
+    width: 30%;
+    text-align: left;
+    margin-left: 2.5vw;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.imgPostUserName{
+    width: 65%;
+    text-align: left;
+    margin-top: -1vh;
+    margin-left: 5.5vw;
+    font-weight: 500;
+}
+.imgCommentEdit{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.imgCommentDelete{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin-right: 25px;
+}
+.imgPostCreated{
+    text-align: left;
+    font-size: 8px;
+    width: 50%;
+    margin-left: 5.5vw;
+}
+.imgCommentEditForm{
+    border: none;
+    resize: none;
+    background-color: rgb(248, 233, 233);
+    margin-top: -25px;
+}
+.txtCommentEditForm{
+    border: none;
+    resize: none;
+    background-color: #F8E9E9;
+    margin-top: -4vh;
+    margin-left: 1.5vw;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .rightLinks{
+        margin-left: 112px;
+        font-size: 22px;
+    }
+    .leftLinks{
+        font-size: 22px;
+    }
+    .imgFrame{
+        height: 55vh;
+    }
+    .imgPostLikes{
+        margin-left: 3vw;
+    }
+    .profileImg{
+        margin-left: 2vw;
+        width: 32px;
+        height: 32px;
+    }
+    .imgUserName{
+        margin-left: 20vw;
+        margin-top: -3.5vh;
+    }
+    .rightLinksTxt{
+        margin-left: 120px;
+        font-size: 22px;
+    }
+    .txtPostLikes{
+        margin-left: 30px;
+    }
+    .profileImgTxt{
+        width: 32px;
+        height: 32px;
+        left: 14.5vw;
+    }
+    .txtFrame{
+        margin-top: 9vh;
+    }
+    .txtUserName{
+        margin-left: 19vw;
+        padding-top: 2vh;
+    }
+    .txtCommentEditForm{
+        margin-left: 0.8vw;
+        width: 26vw;
+    }
+    .postTxtBtn{
+        margin-left: 0.8vw;
+        width: 26.3vw;
+    }
+    .imgCommentEditForm{
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .rightLinks{
+        margin-left: 54px;
+        font-size: 18px;
+    }
+    .profileImg{
+        width: 28px;
+        height: 28px;
+        margin-left: 10vw;
+    }
+    .imgUserName{
+        margin-left: 24vw;
+        margin-top: -3.3vh;
+    }
+    .imgPostLikes{
+        font-size: 13px;
+    }
+    .imgPostUserName{
+        font-size: 14px;
+    }
+    .userImg{
+        width: 2vw;
+        height: 2.5vh;
+    }
+    .userComment{
+        font-size: 12px;
+    }
+    .imgCommentDelete{
+        font-size: 13px;
+    }
+    .imgCommentEdit{
+        font-size: 13px;
+    }
+    .leftLinks{
+        font-size: 18px;
+    }
+    .updateTime{
+        font-size: 5px;
+    }
+    .postBtn{
+        font-size: 12px;
+        height: 3vh;
+    }
+    .rightLinksTxt{
+        font-size: 18px;
+        margin-left: 70px;
+    }
+    .leftLinksTxt{
+        font-size: 18px;
+    }
+    .txtPostLikes{
+        font-size: 13px;
+        margin-left: 24px;
+    }
+    .txtCommentDelete{
+        font-size: 15px;
+    }
+    .txtFrame{
+        height: 12vh;
+    }
+    .userImgTxt{
+        height: 3vh;
+    }
+    .userCommentTxt{
+        font-size: 12px;
+    }
+    .profileImgTxt{
+        width: 24px;
+        height: 24px;
+        left: 18.5vw;
+    }
+    .txtUserName{
+        margin-left: 23vw;
+    }
+    .txtCommentEdit{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .imgFrame{
+        height: 25vh;
+        margin-top: -2.5vh;
+    }
+    .profileImg{
+        width: 17px;
+        height: 17px;
+        margin-left: 32vw;
+    }
+    .imgUserName{
+        margin-left: 38vw;
+        font-size: 9px;
+        margin-top: -2.5vh;
+    }
+    .leftLinks{
+        font-size: 9px;
+    }
+    .rightLinks{
+        font-size: 9px;
+        margin-left: 8px;
+    }
+    .imgPostLikes{
+        font-size: 10px;
+    }
+    .imgPostUserName{
+        font-size: 10px;
+    }
+    .userComment{
+        font-size: 10px;
+    }
+    .imgCommentDelete,.imgCommentEdit{
+        font-size: 8px;
+    }
+    .updateTime{
+        margin-top: 22px;
+    }
+    .imgPostCreated{
+        font-size: 5px;
+    }
+    .txtFrame{
+        height: 8vh;
+        font-size: 10px;    
+        margin-top: 7vh;
+    }
+    .rightLinksTxt{
+        font-size: 9px;
+        margin-left: 10px;
+    }
+    .leftLinksTxt{
+        font-size: 9px;
+    }
+    .txtPostLikes{
+        margin-left: 14px;
+    }
+    .userCommentTxt{
+        font-size: 9px;
+    }
+    .updateTimeTxt{
+        font-size: 4px;
+        margin-left: -26px;
+        margin-top: 14px;
+    }
+    .txtCommentEdit{
+        font-size: 8px;
+    }
+    .txtCommentDelete{
+        font-size: 8px;
+        margin-right: 14px;
+    }
+    .addTxtCreated{
+        font-size: 3px;
+        margin-left: 17px;
+    }
+    .profileImgTxt{
+        width: 15px;
+        height: 15px;
+        left: 31vw;
+    }
+    .txtUserName{
+        margin-left: 35vw;
+        font-size: 9px;
+    }
+    .txtCommentEditForm{
+        font-size: 9px;
+    }
+    .postTxtBtn{
+        height: 2vh;
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,109 @@
+.firstFrame{
+    background-color: #937272; 
+    text-align: left; 
+    color: white; 
+    position: absolute; 
+    width: 100%;
+}
+.mainHeader{
+    height: 300px;
+    z-index: -9;
+    font-size: 70px;
+    letter-spacing: -5px;
+    margin-top: 0px;
+    margin-left: 34px;
+}
+.secondFrame{
+    background-color: rgb(255, 248, 248);
+    height: 100vh;
+    color: black;
+    width: 86vw;
+    float: right;
+    border-radius: 350px 0px 0px;
+    margin-top: -230px;
+}
+.secondHeader{
+    font-size: 40px;
+    margin-top: 32px;
+}
+form{
+    margin-top: 45px;
+}
+.formCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32vw;
+    flex-wrap: wrap;
+    margin-left: 24vw;
+    background-color: #FCEFEF;
+    position: absolute;
+    margin-top: 55px;
+    margin-top: 9vh;
+    height: 70vh;
+    border-radius: 80px;
+}
+.loginInput{
+    width: 370px;
+    height: 38px;
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+.loginButton{
+    width: 378px;
+    height: 38px;
+    background-color: #937272;
+}
+.errMsg{
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1025px) {
+    .mainHeader{
+        font-size: 45px;
+    }
+    .loginInput{
+        width: 321px;
+    }
+    .loginButton{
+        width: 329px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainHeader{
+        font-size: 40px;
+    }
+    .loginInput{
+        width: 239px;
+    }
+    .loginButton {
+        width: 246px;
+    }
+    .registerBtn{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .mainHeader{
+        font-size: 33px;
+        margin-left: 10px;
+    }
+    .secondHeader {
+        font-size: 25px;
+    }
+    .formCard{
+        width: 42vw;
+    }
+    .loginButton {
+        width: 177px;
+        height: 30px;
+    }
+    .loginInput {
+        width: 171px;
+        height: 30px;
+    }
+    .loginBtn, .registerBtn{
+        font-size: 9px;
+    }
+}

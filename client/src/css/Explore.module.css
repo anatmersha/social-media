@@ -1,0 +1,195 @@
+.firstFrame{
+    display: flex;
+}
+.secondFrame{
+    width: 60%;
+    height: 100%;
+    background-color: #FFF8F8;
+    margin-left: 15vw;
+}
+.thirdFrame{
+    background-color: #FFF8F8;
+    margin-top: 8vh;
+    border-radius: 80px 80px 0 0;
+    height: 100%;
+}
+.userCard{
+    width: 60%;
+    margin-left: 210px;
+    background-color: #FCEFEF;
+    line-height: 1;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.postextTag, .imgsTag{
+    height: 6vh;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    margin-top: 19px;
+}
+.imgsTag{
+    background-color: #EDDDDD; 
+    margin-left: -235px;
+}
+.postextTag{
+    background-color: #F4EAEA; 
+    margin-right: -236px;
+}
+.imgPostGallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.imgCard{
+    width: 33%;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
+.vidCard{
+    width: 33%;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
+.imgPost{
+    width: 15vw;
+    height: 40vh;
+}
+.vidPost{
+    width: 15vw;
+    height: 40vh;
+    border-radius: 20px;
+}
+.textPostGallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+.txtCard{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    max-height: fit-content;
+    background-color: #EABEBE;
+    margin: 3vh;
+    border-radius: 15px;
+}
+.txtPost{
+    float: left;
+    margin-left: -30px;
+    margin-top: 55px;
+}
+.txtImg{
+    border-radius: 30px;
+    width: 2vw;
+    height: 4vh;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+.sideNavbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+}
+.navLink{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+.navList{
+    padding: 15px;
+}
+.mainHeadline{
+    background-color: rgb(252, 239, 239);
+    width: 27%;
+    margin-left: 365px;
+    line-height: 1;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: rgb(235 204 204) 2px 1px 8px;
+}
+.txtDetailsLink{
+    margin-top: 105px;
+    text-align: left;
+    margin-left: 61px;
+}
+.txtUserName{
+    float: left;
+    margin-top: 9px;
+    margin-left: 62px;
+}
+
+@media screen and (max-width: 1025px) {
+    .mainHeadline{
+        margin-left: 210px;
+    }
+    .txtCard{
+        height: 13vh;
+    }
+    .txtDetailsLink{
+        margin-top: 82px;
+    }
+    .txtUserName{
+        margin-left: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainHeadline{
+        height: 5vh;
+        width: 28%;
+        font-size: 14px;
+        line-height: 0.5;
+    }
+    .postextTag, .imgsTag{
+        height: 4vh;
+        font-size: 14px;
+        margin-top: -6px;
+    }
+    .imgPost{
+        height: 25vh;
+    }
+    .txtCard{
+        height: 10vh;
+        font-size: 15px;
+    }
+    .txtDetailsLink{
+        font-size: 12px;
+        margin-top: 60px;
+    }
+    .txtPost{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .mainHeadline{
+        font-size: 10px;
+        line-height: 0.7;
+        margin-left: 88px;
+    }
+    .postextTag, .imgsTag{
+        height: 3vh;
+        line-height: 0;
+        font-size: 10px;
+    }
+    .imgPost{
+        height: 20vh;
+    }
+    .txtCard{
+        height: 7vh;
+        font-size: 9px;
+    }
+    .txtDetailsLink{
+        font-size: 5px;
+    }
+}

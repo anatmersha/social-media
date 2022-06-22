@@ -1,0 +1,190 @@
+.firstFrame{
+    display: flex;
+}
+.chatMenu{
+    width: 30%;
+    height: 90vh;
+    background-color: #FFF8F8;
+    margin-left: 19vw;  
+    overflow-y: scroll;
+}
+.chatBox{
+    width: 32%;
+    height: 90vh;
+    background-color: #FFF8F8;
+    margin-left: 1vw;
+}
+.mainChatHeadline{
+    margin-top: 3vh;
+    font-weight: bold;
+    background-color: #FCEFEF;
+    width: 40%;
+    height: 7vh;
+    margin-left: 9vw;
+    line-height: 3.5;
+    font-size: 18px;
+    box-shadow: #ebcccc 2px 1px 8px;
+}
+.mainChatMenu{
+    height: 85vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+.mainChatBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+.chatBoxTop{
+    width: 90%;
+    height: 90vh;
+    margin-left: 58px;
+    overflow-y: scroll;
+}
+.chatBoxTop::-webkit-scrollbar, 
+.chatMenu::-webkit-scrollbar{
+    width: 0.8vw;
+    border-radius: 10px;
+    background-color: rgb(147, 114, 114);
+}
+.chatBoxTop::-webkit-scrollbar-thumb, 
+.chatMenu::-webkit-scrollbar-thumb{
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(212, 181, 181);
+}
+.chatBoxTop::-webkit-scrollbar-thumb:hover, 
+.chatMenu::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(207, 166, 166);
+}
+.chatBoxBottom{
+    display: flex;
+    justify-content: center;
+}
+.msgInput{
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+}
+.msgSubmitBtn{
+    width: 465px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1vh;
+}
+.secondFrame{
+    width: 40%;
+    height: 100vh;
+    background-color: #937272;
+    border-radius: 85px 85px 0px 0px;
+}
+.mainFrame{
+    background-color: #FFF8F8;
+    margin-top: 5vh;
+    width: 40%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.thirdFrame{
+    width: 37%;
+    background-color: blueviolet;
+}
+.mainHeader{
+    margin-top: 3vh;
+    font-weight: bold;
+    background-color: #FCEFEF;
+    border-radius: 5px;
+    width: 27%;
+    margin-left: 290px;
+    height: 5vh;
+    line-height: 2.5;
+    box-shadow: white 0px 0px 10px 0px;
+}
+.chatBoxForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.chatHeader{
+    font-weight: bold;
+    background-color: #FCEFEF;
+    width: 40%;
+    height: 7vh;
+    margin-left: 9vw;
+    margin-top: 3vh;
+    line-height: 3.5;
+    font-size: 18px;
+    box-shadow: #ebcccc 2px 1px 8px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .chatBox{
+        width: 40%;
+    }
+    .chatMenu{
+        margin-left: 9vw;
+        width: 40%;
+    }
+    .mainChatHeadline{
+        margin-left: 12vw;
+    }
+    .chatHeader{
+        margin-left: 7vw;
+    }
+    .msgSubmitBtn{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chatBox{
+        width: 44%;
+    }
+    .chatMenu{
+        margin-left: 9vw;
+        width: 44%;
+    }
+    .mainChatHeadline, .chatHeader{
+        line-height: 2.2;
+        height: 5vh;
+    }
+    .chatBoxTop{
+        margin-left: 36px;
+    }
+    .msgSubmitBtn{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .mainChatHeadline, .chatHeader{
+        font-size: 12px;
+        line-height: 2;
+        height: 3vh;
+    }
+    .mainChatMenu{
+        margin-left: 0;
+    }
+    .chatMenu{
+        margin-left: 1.5vw;
+        width: 48%;
+    }
+    .chatBox{
+        width: 48%;
+    }
+    .msgSubmitBtn{
+        width: 152px;
+    }
+    .chatBoxTop{
+        margin-left: 20px;
+    }
+    .msgSubmitBtn{
+        height: 70px;
+        width: 184px;
+    }
+}

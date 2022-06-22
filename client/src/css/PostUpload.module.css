@@ -1,0 +1,125 @@
+/* .shareFrame{
+    background-color: white;
+    width: 60%;
+    margin-left: 225px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(251, 246, 246);
+} */
+.shareProfileImg{
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    float: left;
+    margin-left: 15px;
+    margin-top: 32px;
+}
+.shareCaptionImput{
+    border: none;
+    outline: none;
+    resize: none;
+    /* overflow: hidden; */
+    float: left;
+    margin-top: 30px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+.shareCaptionImput:focus{
+    outline: none;
+}
+.shareForm{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 56px;
+}
+.shareLabel{
+    padding: 10px;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.shareBtn{
+    margin-left: 450px;
+    border: none;
+    font-size: 18px;
+    width: 74px;
+    height: 38px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f7cece;
+}
+.sharedImg{
+    width: 23vw;
+    height: 55vh;
+}
+.shareLocation{
+    padding: 10px;
+    font-size: 22px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 1025px) {
+    .shareCaptionImput{
+        font-size: 14px;
+        width: 30vw;
+    }
+    .shareProfileImg{
+        width: 3vw;
+        height: 5vh;
+        margin-top: 18px;
+    }
+    .shareForm{
+        margin-top: 26px;
+    }
+    .shareBtn{
+        margin-left: 178px;
+        font-size: 14px;
+        width: 52px;
+        height: 33px;
+        margin-bottom: 0;
+    }
+    .shareLabel{
+        padding: 6px;
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .shareCaptionImput{
+        width: 29vw;
+    }
+    .shareProfileImg{
+        margin-top: 30px;
+    }
+    .shareBtn{
+        margin-left: 102px;
+        font-size: 12px;
+        width: 47px;
+        height: 30px;
+    }
+    .shareLabel{
+        padding: 4px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .shareCaptionImput{
+        width: 25vw;
+        font-size: 9px;
+    }
+    .shareBtn{
+        font-size: 8px;
+        width: 35px;
+        height: 15px;
+        margin-left: 18px;
+    }
+    .shareLabel{
+        font-size: 8px;
+    }
+    .shareLocation{
+        font-size: 8px;
+    }
+    .shareForm{
+        margin-top: 8px;
+    }
+}
