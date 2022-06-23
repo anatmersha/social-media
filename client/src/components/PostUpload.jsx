@@ -60,7 +60,7 @@ const PostUpload = () => {
             if(fileType === "") {
                 axios
                 .post("/posts/text", {
-                    userId: state?.currentUser._id,
+                    userId: state?.currentUser?._id,
                     text: postCaption,
                     location: location
                 })

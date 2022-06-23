@@ -28,9 +28,14 @@ const Conversation = ({ convo }) => {
         setChatFriend(state.users?.find((user)=> user._id === chatFriendId))
         const onlineFriends = [];
 
-        state.onlineUsers?.map((user)=> {
-            if(user === chatFriendId?._id) onlineFriends.push(user)
-        }) 
+        for(let i=0; i < state.onlineUsers.length; i++) {
+            return (state.onlineUsers[i] === chatFriendId?._id) ? onlineFriends.push(state.onlineUsers[i]) : ""
+        }
+
+        // const bb = () => state.onlineUsers?.map((user)=> {
+        //     return (user === chatFriendId?._id) ? onlineFriends.push(user) : ""
+        // }) 
+        // bb()
         dispatch({ type: "onlineFriends", value: onlineFriends })
         console.log(chatFriendId , "chatFriendId");
     },[state.onlineUsers])

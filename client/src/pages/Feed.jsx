@@ -25,14 +25,22 @@ const Feed = () => {
                     state.posts?.sort((p1, p2)=> {
                     return new Date(p2.created) - new Date(p1.created);
                 }))
-            } else {
-                state.currentUser?.following?.map((item)=> {
-                    const allPosts = state.posts?.filter((post)=> post?.userId === item?.userId || post?.userId === state.currentUser?._id)
+            } 
+            else {
+                for(let i=0; i< state.currentUser?.following.length; i++) {
+                    const allPosts = state.posts?.filter((post)=> post?.userId === state.currentUser?.following[i]?.userId || post?.userId === state.currentUser?._id)
                     setMyPosts(
                         allPosts.sort((p1, p2)=> {
                             return new Date(p2.created) - new Date(p1.created);
                     }))
-                })
+                }
+                // state.currentUser?.following?.map((item)=> {
+                //     const allPosts = state.posts?.filter((post)=> post?.userId === item?.userId || post?.userId === state.currentUser?._id)
+                //     setMyPosts(
+                //         allPosts.sort((p1, p2)=> {
+                //             return new Date(p2.created) - new Date(p1.created);
+                //     }))
+                // })
             }
         }
         getAllPosts()

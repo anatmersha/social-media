@@ -61,25 +61,29 @@ const Profile = () => {
     },[myPosts])
 
     useEffect(()=> {
-        // if(state.followers) {
-            state.followers?.map((follower)=> {
-                if(follower.userId === state.currentUser._id) {
-                    console.log("is following");
-                    setIsFollowing(true)
-                }
-            })
-        // }
+            for(let i=0; i < state.followers?.length; i++) {
+                return (followers.userId === state.currentUser._id) ? setIsFollowing(true) :""
+            }
+            // state.followers?.map((follower)=> {
+            //     return (follower.userId === state.currentUser._id) ? setIsFollowing(true) :""
+            //     // console.log("is following")
+            // })
     },[followers, state.currentUser])
 
     useEffect(()=> {
         const saved = [];
         // if(user) {
           if(user?._id === state.currentUser?._id) {
-            user.saved?.map((item)=> {
-              state.posts?.map((post)=> {
-                if(post._id === item) saved.push(post)
-              })
-            })
+            for(let i=0; i < user.saved?.length; i++) {
+                for(let z=0; z < state.posts?.length; z++) {
+                    return (user.saved[i] === state.posts[z]._id) ? user.saved.push(state.posts[z]) : ""
+                }
+            }
+            // user.saved?.map((item)=> {
+            //   state.posts?.map((post)=> {
+            //     if(post._id === item) saved.push(post)
+            //   })
+            // })
           }
         // }
       },[state.posts, state.currentUser, user])

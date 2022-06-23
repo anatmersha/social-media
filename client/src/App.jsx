@@ -28,7 +28,7 @@ function App() {
 
   useEffect(()=> {
     axios
-    .get("/users")
+    .get("/users") 
     .then((res)=> {
       const Data = res.data;
       const user = Data?.find((item)=> item?.auth === state.auth);

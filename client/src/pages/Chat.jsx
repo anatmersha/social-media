@@ -42,9 +42,15 @@ const Chat = () => {
         socket.current.emit("addUser", state.currentUser?._id)   
         socket.current.on("getUsers", users=>{
             const online = [];
-            users?.map((user)=> {
-                if(user.userId) online?.push(user.userId)
-            }) 
+
+            for(let i=0; i < users?.length; i++) {
+                return (users[i]?.userId) ? online?.push(users[i]?.userId) : ""
+            }
+
+            // const ss = () => users?.map((user)=> {
+            //     return (user.userId) ? online?.push(user.userId) : ""
+            // }) 
+            // ss()
             dispatch({ type: "onlineUsers", value: online })
             console.log(online, "online");
         })
@@ -81,18 +87,18 @@ const Chat = () => {
     },[state.currentChat, messages])
 
     useEffect(()=>{
-        scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+        return scrollRef.current?.scrollIntoView({ behavior: "smooth" });
     },[scrollRef])
 
     useEffect(()=>{
         const friend = state.currentChat?.members?.find((item)=> item !== state.currentUser?._id)
-        const currentChatFriend = state.users?.find((item)=> item._id === friend)
+        const currentChatFriend = state.users?.find((item)=> item?._id === friend)
         dispatch({ type: "chatFriend", value: currentChatFriend })
 
     },[state.currentChat, state.currentUser, state.chatFriend])
 
     useEffect(()=>{
-        const friends = state.following?.filter((friend)=> onlineUsers?.includes(friend.userId))
+        const friends = state.following?.filter((friend)=> onlineUsers?.includes(friend?.userId))
         dispatch({ type: "onlineFriends", value: friends }) 
     },[state.onlineUsers])
     
@@ -118,7 +124,7 @@ const Chat = () => {
 
         <div className={chatStyle.chatBox}>
             <div className={chatStyle.mainChatBox}>
-                {state.chatFriend ? <div className={chatStyle.chatHeader}>You & {state.chatFriend.name}
+                {state.chatFriend ? <div className={chatStyle.chatHeader}>You & {state.chatFriend?.name}
                 <span style={{position: "absolute", top: "-6.2vh", right: "-10vw", fontSize: "30px"}} onClick={()=>  dispatch({ type: "currentChat", value: null })}><AiOutlineCloseSquare/></span></div> : ""} 
                 {state.currentChat ? 
                 <>
@@ -145,8 +151,8 @@ const Chat = () => {
                         
                         axios
                         .post("/chat/message",{
-                            convoID: state.currentChat._id,
-                            senderID: state.currentUser._id,
+                            convoID: state.currentChat?._id,
+                            senderID: state.currentUser?._id,
                             text: newMessage,
                             created: new Date()
                         })

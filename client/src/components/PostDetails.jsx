@@ -20,8 +20,8 @@ const PostDetails = () => {
     const { state } = useContext(AuthContext)
     
     useEffect(()=>{
-        setPostComments(state?.currentPost.comments)
-        setPostLikes(state?.currentPost.likes) 
+        setPostComments(state?.currentPost?.comments)
+        setPostLikes(state?.currentPost?.likes) 
     }, [state.currentPost])
 
     useEffect(()=>{
@@ -74,7 +74,7 @@ const PostDetails = () => {
                 </div>
             :
                 <div className={PostDetailsStyle.imgFrame}>   
-                    {state?.currentPost?.postTYP === "image" ?  <img className={PostDetailsStyle.imgPost} src={state?.currentPost?.image} alt=""/> : ""}
+                    {state?.currentPost?.postTYP === "image" ?  <img className={PostDetailsStyle.imgPost} src={state?.currentPost?.image} alt=""  onClick={()=> console.log(state?.currentPost)}/> : ""}
                 
                     {state?.currentPost?.postTYP === "video" ?   
                         <video className={PostDetailsStyle.vidPost}
@@ -171,7 +171,6 @@ const PostDetails = () => {
             <div className={PostDetailsStyle.postComments}>
                 {postComments ? postComments?.map((item, i)=> {
                 const commentUser = state?.users?.find((it)=> it?._id === item?.userId)
-                console.log(commentUser);
 
                     return(
                         <div className={PostDetailsStyle.commentCard}>
@@ -183,7 +182,7 @@ const PostDetails = () => {
 
                         <p className={PostDetailsStyle.updateTime}><i>Uploaded {format(item?.created)}</i></p>
 
-                        {item?.userId === state?.currentUser?._id  || state?.currentPost?._id ===  state?.currentUser._id ?
+                        {item?.userId === state?.currentUser?._id  || state?.currentPost?._id ===  state?.currentUser?._id ?
                         <>
                         <button className={PostDetailsStyle.imgCommentEditBtn}
                          onClick={()=> { showEditField === false ? setShowEditField(i) : setShowEditField(false) }}
@@ -266,14 +265,14 @@ const PostDetails = () => {
                     e.preventDefault();
                     
                     const newPostComment = {
-                        userId: state?.currentUser._id,
+                        userId: state?.currentUser?._id,
 
                         userComment: newComment,
                         created: new Date()
                     }
                     
                     axios
-                    .patch(`/posts/comment/new/${state?.currentPost._id}`, {newPostComment})
+                    .patch(`/posts/comment/new/${state?.currentPost?._id}`, {newPostComment})
                     .then((res)=> {
                         console.log(res)
                     })
@@ -300,7 +299,7 @@ const PostDetails = () => {
             </div>
                 : ""}
 
-            <p className={PostDetailsStyle.imgCreated}>{format(state?.currentPost.created)}</p> 
+            <p className={PostDetailsStyle.imgCreated}>{format(state?.currentPost?.created)}</p> 
             </div>
             </div> 
             </div> 
