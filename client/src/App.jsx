@@ -39,18 +39,19 @@ function App() {
       dispatch({ type: "followers", value: user?.followers })
     })
     .catch((err)=> console.log(err.message))
-  },[state.auth])
+  },[])
 
   useEffect(()=> {
         axios
         .get("/posts")
         .then((res)=> {
             dispatch({ type: "posts", value: res.data })
+            console.log(res);
         })
         .catch((err)=> {
             console.log(err);
         })
-  },[state.posts])
+  },[])
 
   return (
     <AuthContext.Provider value={{ state, dispatch }}>
