@@ -142,7 +142,7 @@ const Notifications = () => {
                 )
                 
             })
-        : ""}
+        : "No notifications yet!"}
 
         </div>
         </div>
