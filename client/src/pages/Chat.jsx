@@ -18,6 +18,7 @@ const Chat = () => {
     const { state, dispatch } = useContext(AuthContext)
     const socket = useRef()
     const scrollRef = useRef();
+
     
     useEffect(()=> {
         socket.current = io("ws://localhost:8900");
@@ -28,7 +29,7 @@ const Chat = () => {
                 created: new Date()
             })
         })
-    },[arrivalMsg])
+    },[])
 
     useEffect(()=> {
         if(arrivalMsg){
@@ -84,7 +85,7 @@ const Chat = () => {
             })  
         }   
         getMessages();
-    },[state.currentChat, messages])
+    },[state.currentChat])
 
     useEffect(()=>{
         return scrollRef.current?.scrollIntoView({ behavior: "smooth" });

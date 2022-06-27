@@ -3,9 +3,9 @@ import "../css/Message.css";
 import { format } from "timeago.js";
 import AuthContext from "../Context/AuthContext";  
 
-const Message = ({message,own}) => {
+const Message = ({message, own}) => {
     const { state } = useContext(AuthContext)
-
+    
     return(
         <div className={own ? "message own" : "message"}>
             <div className="messageTop">

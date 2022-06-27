@@ -15,13 +15,14 @@ const Conversation = ({ convo }) => {
             .get(`/chat/convo/msgs/${convo?._id}`) 
             .then((res)=> {
                 setMessages(res.data)
+                console.log(res.data);
             })
             .catch((err)=> {
                 console.log(err.message);
             })
         }
         getMessages();
-    },[messages, convo])
+    },[convo])
 
     useEffect(()=> {
         const chatFriendId = convo?.members?.find((item)=> item !== state.currentUser?._id)

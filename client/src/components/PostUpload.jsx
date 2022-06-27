@@ -33,7 +33,7 @@ const PostUpload = () => {
         const getUserCityAndWeather = () => {
             const lon = coordinate.longitude;  
             const lat = coordinate.latitude; 
-            const API_key = "c255b4157bff8cac3122182b59d9ee44";
+            const API_key = "b5a03df20cb08af9fb158cfa0abd4a44";
             const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}`
             
             axios

@@ -31,15 +31,14 @@ function App() {
     .get("/users") 
     .then((res)=> {
       const Data = res.data;
-      const user = Data?.find((item)=> item?.auth === state.auth);
-      console.log(user.following);
+      const user = Data?.find((item)=> item?.auth.email === state.auth.email);
       dispatch({ type: "users", value: Data })
       dispatch({ type: "currentUser", value: user })
       dispatch({ type: "following", value: user?.following })
       dispatch({ type: "followers", value: user?.followers })
     })
     .catch((err)=> console.log(err.message))
-  },[])
+  },[state.auth])
 
   useEffect(()=> {
         axios
